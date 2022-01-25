@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF form</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="3"><b>Participant name</b></td> <td>{{users.client.firstname}} {{users.client.lastname}}</td>
+        </tr>
+        <tr>
+            <td colspan="3"><b>Employee name</b></td> <td>{{users.staff.firstname}} {{users.staff.lastname}}</td>
+        </tr>
+        <tr>
+            <td colspan="3"><b>Site location</b></td> <td>{{users.location}}</td>
+        </tr>
+        <tr>
+            <td><b>Date</b></td> <td>{{users.date}}</td>
+        </tr>
+        <tr>
+            <td><b>witnesses</b></td> <td>{{users.witnesses}}</td>
+        </tr>
+        <tr>
+            <td><b>Description of what happened before the incident</b></td> 
+            <td>{{users.descriptionBefore}}</td>
+        </tr>
+        <tr>
+            <td colspan="10"><b>Description of what happened during the incident</b></td> 
+            <td >{{users.descriptionDuring}}</td>
+        </tr>
+        <tr>
+            <td><b>Description of what happened after the incident</b></td> 
+            <td>{{users.descriptionAfter}}</td>
+        </tr>
+        <tr>
+            <td><b>Incident category</b></td> <td>{{users.category}}</td>
+        </tr>
+        <tr>
+            <td><b>Impact assessment</b></td> <td>{{users.impactAssessiment}}</td>
+        </tr>
+        <tr>
+            <td><b>Reportable</b></td> <td>{{users.isReportable}}</td>
+        </tr>
+        <tr>
+            <td><b>Initial actions taken</b></td> <td>{{users.impactAssessiment}}</td>
+        </tr>
+        <tr>
+            <td><b>Police reference number</b></td> <td>{{users.policeReferenceNumber}}</td>
+        </tr>
+        <tr>
+            <td><b>Practice leader</b></td> <td>{{users.practiseLeader}}</td>
+        </tr>
+    </table>
+</body>
+
+</html>
